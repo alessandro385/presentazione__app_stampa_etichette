@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informazioni Analisi Dati - Nome Tua Azienda</title>
+    <!-- Stili della presentazione principale -->
+    <link rel="stylesheet" href="presentation.css">
+    <!-- Stili specifici per questa pagina -->
+    <link rel="stylesheet" href="data-analysis-info.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header class="info-header">
+        <div class="container">
+            <div class="header-title">
+                <h1>Analisi Dati</h1>
+                <p>Una guida completa alla dashboard di analisi delle stampe</p>
+            </div>
+            <nav>
+                <a href="presentation.html" class="btn" id="presentationBtn">Torna alla Presentazione</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="info-page-content">
+            <h1><span class="material-icons">analytics</span>Modulo Analisi Dati Stampe</h1>
+            <p>Questo modulo opzionale trasforma i dati grezzi delle tue stampe di etichette in informazioni strategiche. Analizzando quando, cosa e quanto viene stampato, puoi ottenere una comprensione più profonda delle tue operazioni.</p>
+
+            <!-- Immagine 1: Dashboard Generale (Spostata qui) -->
+            <div class="image-container">
+                <img src="assets/data-analysis.png" alt="Dashboard Analisi Dati" class="info-image">
+                <p class="image-caption">Esempio della dashboard riepilogativa con metriche chiave e andamento temporale.</p>
+            </div>
+
+            <div class="feature-highlight">
+                <p><strong>Nota:</strong> Questo modulo legge i dati registrati dall'applicazione principale ogni volta che viene effettuata una stampa.</p>
+            </div>
+
+            <h2><span class="material-icons">bar_chart</span>Funzionalità Principali</h2>
+            <ul class="feature-list">
+                <li>
+                    <div class="list-item-header">
+                        <span class="material-icons list-icon">summarize</span>
+                        <strong>Dashboard Riepilogativa</strong>
+                    </div>
+                    <div class="list-item-content">Visualizza metriche chiave come il numero totale di stampe e il numero totale di copie generate.</div>
+                </li>
+                <li>
+                    <div class="list-item-header">
+                        <span class="material-icons list-icon">pie_chart</span>
+                        <strong>Prodotti Popolari</strong>
+                    </div>
+                    <div class="list-item-content">Identifica quali prodotti vengono stampati più frequently tramite un grafico a torta intuitivo.</div>
+                </li>
+                <li>
+                    <div class="list-item-header">
+                        <span class="material-icons list-icon">category</span>
+                        <strong>Analisi per Categoria</strong>
+                    </div>
+                    <div class="list-item-content">Scopri quali categorie di prodotti generano più stampe, utile per capire le macro-aree di interesse.</div>
+                </li>
+                <li>
+                    <div class="list-item-header">
+                        <span class="material-icons list-icon">timeline</span>
+                        <strong>Andamento Temporale</strong>
+                    </div>
+                    <div class="list-item-content">Monitora l'attività di stampa nel tempo (giornaliero, settimanale, mensile) con grafici a barre che mostrano sia il numero di stampe che le copie.</div>
+                </li>
+                 <li>
+                    <div class="list-item-header">
+                        <span class="material-icons list-icon">table_view</span>
+                        <strong>Tabella Dati Dettagliata</strong>
+                    </div>
+                    <div class="list-item-content">Esplora l'elenco completo delle stampe registrate, con possibilità di ricerca, filtro per data e paginazione.</div>
+                </li>
+            </ul>
+
+            <h2><span class="material-icons">insights</span>Vantaggi dell'Analisi Dati</h2>
+            <ul class="benefit-list">
+                <li>
+                    <div class="list-item-header">
+                        <span class="material-icons list-icon">lightbulb</span>
+                        <strong>Decisioni Informate</strong>
+                    </div>
+                    <div class="list-item-content">Basa le tue scelte operative e strategiche su dati concreti anziché su supposizioni.</div>
+                </li>
+                <li>
+                    <div class="list-item-header">
+                        <span class="material-icons list-icon">trending_up</span>
+                        <strong>Ottimizzazione Risorse</strong>
+                    </div>
+                    <div class="list-item-content">Comprendi i picchi di lavoro e i prodotti più richiesti per gestire meglio scorte e personale.</div>
+                </li>
+                <li>
+                    <div class="list-item-header">
+                        <span class="material-icons list-icon">inventory_2</span>
+                        <strong>Gestione Inventario</strong>
+                    </div>
+                    <div class="list-item-content">Identifica rapidamente i prodotti ad alta rotazione che potrebbero richiedere un riordino più frequente.</div>
+                </li>
+                <li>
+                    <div class="list-item-header">
+                        <span class="material-icons list-icon">saved_search</span>
+                        <strong>Individuazione Trend</strong>
+                    </div>
+                    <div class="list-item-content">Riconosci pattern stagionali o cambiamenti nelle preferenze nel lungo periodo.</div>
+                </li>
+            </ul>
+
+            <!-- NUOVA SEZIONE: Analisi Avanzata -->
+            <div class="advanced-analysis-section">
+                <h2><span class="material-icons">calculate</span>Analisi Avanzata: Costi e Inventario (Potenziale Futuro)</h2>
+                <p>Oltre all'analisi delle etichette stampate, il sistema può essere esteso per fornire una visione ancora più dettagliata dei costi e dell'efficienza operativa:</p>
+                <ul>
+                    <li>
+                        <div class="list-item-header">
+                             <span class="material-icons list-icon">receipt_long</span>
+                             <strong>Costo Ricetta (Food Cost):</strong>
+                        </div>
+                        <div class="list-item-content">Integrando la possibilità di definire le <strong>percentuali di utilizzo</strong> di ciascuna materia prima per ogni ricetta e collegando queste informazioni al <strong>costo di acquisto</strong> degli ingredienti (da un database dedicato o importato), è possibile calcolare automaticamente il costo di produzione (food cost) di ogni singolo piatto preparato.</div>
+                    </li>
+                     <li>
+                        <div class="list-item-header">
+                             <span class="material-icons list-icon">inventory</span>
+                             <strong>Controllo Inventario e Sprechi:</strong>
+                        </div>
+                        <div class="list-item-content">Confrontando i dati di produzione (quanti piatti sono stati teoricamente preparati, basandosi sul consumo delle materie prime registrato) con i <strong>dati di vendita effettivi</strong> (provenienti dal sistema di cassa o dagli ordini dei clienti), si possono identificare discrepanze. Questo aiuta a individuare potenziali <strong>sprechi</strong> (prodotti scaduti o invenduti) o a ottimizzare le <strong>scorte di magazzino</strong>, riducendo le rimanenze eccessive.</div>
+                    </li>
+                </ul>
+                 <p><strong>Nota:</strong> Queste funzionalità avanzate richiederebbero l'integrazione con database aggiuntivi (costi materie prime, dati di vendita/ordini) e potenzialmente modifiche alla struttura dati dei prodotti per includere le ricette dettagliate.</p>
+            </div>
+            <!-- FINE NUOVA SEZIONE -->
+
+             <!-- Immagine 2: Grafici Specifici -->
+             <div class="image-container">
+                <img src="assets/data-analysis2.png" alt="Grafici Analisi Dati" class="info-image">
+                <p class="image-caption">Dettaglio dei grafici per prodotti popolari e analisi per categoria.</p>
+            </div>
+
+            <div class="access-info">
+                <h2><span class="material-icons">launch</span>Come Accedere</h2>
+                <p>Se il modulo è stato attivato per la tua installazione, puoi accedervi tramite un link dedicato presente nella navigazione principale dell'applicazione o direttamente dal pannello di controllo.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Script per il pulsante di ritorno alla presentazione
+        document.getElementById('presentationBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = 'presentation.html';
+        });
+    </script>
+</body>
+</html> 

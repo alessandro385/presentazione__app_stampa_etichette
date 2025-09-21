@@ -1,0 +1,162 @@
+/* Stili per la pagina informativa sull'analisi dei dati */
+
+/* Body e Contenitore Principale */
+body {
+    background-color: var(--light-color); /* Sfondo coerente con la presentazione */
+    padding-top: 100px; /* Aggiunge spazio in alto per l'header fisso */
+}
+
+/* Stili per l'header specifico di questa pagina */
+.info-header {
+    background-color: #ffffff;
+    padding: 1rem 0; /* Ripristinato padding per un header più snello */
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.info-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title h1 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.header-title p {
+    font-size: 1rem;
+    color: var(--gray-color);
+    margin: 0;
+}
+
+/* Stile per il contenuto principale della pagina */
+.info-page-content {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin: 0 auto 40px; /* Rimosso margin-top, aggiunto auto per centrare e margin-bottom */
+}
+
+.info-page-content h1,
+.info-page-content h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--secondary-color);
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.info-page-content h1 { font-size: 2.2rem; }
+.info-page-content h2 { font-size: 1.8rem; }
+
+.info-page-content .material-icons {
+    margin-right: 15px;
+    font-size: 1.5em;
+    color: var(--primary-color);
+}
+
+.info-page-content p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: var(--text-color);
+}
+
+/* Stile per la nota evidenziata */
+.feature-highlight {
+    background-color: #e7f3ff;
+    border-left: 5px solid var(--primary-color);
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 4px;
+}
+
+.feature-highlight p {
+    margin-bottom: 0;
+    color: #0d47a1;
+}
+
+/* Stili per le immagini */
+.image-container {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.info-image {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease;
+}
+
+.info-image:hover {
+    transform: scale(1.03);
+}
+
+.image-caption {
+    font-style: italic;
+    color: var(--gray-color);
+}
+
+/* Stili per le liste a "Card" */
+.feature-list, .benefit-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.feature-list li, .benefit-list li {
+    background-color: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 25px;
+    transition: var(--transition);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.04);
+}
+
+.feature-list li:hover, .benefit-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border-color: var(--primary-color);
+}
+
+.list-item-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.list-item-header .list-icon {
+    margin-right: 15px;
+    color: var(--secondary-color);
+    font-size: 2rem;
+}
+
+.list-item-header strong {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+.list-item-content {
+    color: var(--text-color);
+}
+
+/* Stili per sezioni specifiche */
+.access-info p {
+    margin-bottom: 0;
+}
+
+.advanced-analysis-section {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid var(--border-color);
+}
